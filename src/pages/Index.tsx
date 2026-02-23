@@ -20,7 +20,7 @@ export default function Index() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-[42px] sm:text-[56px] md:text-[72px] lg:text-[80px] font-normal leading-[1.1] text-foreground max-w-3xl">
+        <h1 className="text-[42px] sm:text-[56px] md:text-[72px] lg:text-[80px] font-normal leading-[1.1] tracking-[-5px] text-foreground max-w-3xl">
           Smart Solutions for
           <br />
           <span className="gradient-text font-normal">Modern Investors</span>
