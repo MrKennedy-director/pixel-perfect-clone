@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.svg";
 
 const navLinks = [
   { label: "Infrastructure", href: "/infrastructure" },
@@ -19,7 +20,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[89px]">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-            <FactFindersLogo />
+            <img src={logo} alt="Fact Finders Pro" className="h-10" />
           </Link>
 
           {/* Desktop Nav */}
@@ -82,22 +83,3 @@ export default function Navbar() {
   );
 }
 
-function FactFindersLogo() {
-  return (
-    <div className="flex items-center gap-2">
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="36" height="36" rx="8" fill="url(#logo-gradient)" />
-        <text x="7" y="26" fontSize="22" fontWeight="800" fontFamily="Inter, sans-serif" fill="white">F</text>
-        <circle cx="26" cy="10" r="4" fill="white" fillOpacity="0.4" />
-        <defs>
-          <linearGradient id="logo-gradient" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#296DDC" />
-            <stop offset="0.545" stopColor="#13A9E4" />
-            <stop offset="1" stopColor="#8AECB3" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <span className="text-primary font-bold text-lg leading-tight">Fact Finders Pro</span>
-    </div>
-  );
-}
