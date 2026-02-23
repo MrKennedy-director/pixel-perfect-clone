@@ -71,7 +71,7 @@
 
 @layer utilities {
   .gradient-brand {
-    background: radial-gradient(1235.15% 166.56% at 4.55% 0%, #296DDC 0%, #13A9E4 54.5%, #8AECB3 100%);
+    background: linear-gradient(99deg, #296DDC 0%, #13A9E4 54.5%, #8AECB3 100%);
   }
 
   .gradient-text {
