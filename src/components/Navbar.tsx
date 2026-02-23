@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[89px]">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
-            <img src={logo} alt="Fact Finders Pro" className="h-10" />
+            <img src={logo} alt="Fact Finders Pro" className="h-9" />
           </Link>
 
           {/* Desktop Nav */}
